@@ -1,13 +1,16 @@
 
+.spantitle{
+    font-size: 60px;
+    color: #F8F7F1;
+    font-family: 'Rubik', sans-serif;
+    -webkit-text-stroke: 0.4px black;
+}
+
 @media screen and (max-width: 800px) {
-    .divCarousel{
-        text-align: center;
-        width: 100px;
-        height: 100px;
-    }
+
     .carousel{
-        width: 100px;
-        height: 100px;
+        width: auto;
+        height: auto;
     }
 
 }

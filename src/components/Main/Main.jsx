@@ -1,9 +1,10 @@
 import { FcAlarmClock } from 'react-icons/fc';
 import { Button } from 'react-bootstrap';
 import './Main.css';
+import { BsFillSuitHeartFill } from 'react-icons/bs';
 import terapia from '../../assets/terapia.jpeg';
 import adultomayor from '../../assets/adultomayor.jpeg';
-import terapeutaNashly from '../../assets/terapeuta_nashly.png';
+import Metod from '../Metod/Metod';
 
 function Main() {
     return (
@@ -11,7 +12,7 @@ function Main() {
             <div>
                 <div>
                     <Button className="buttonAgenda">
-                        <FcAlarmClock size="50" /> Agenda tu hora
+                        <FcAlarmClock size="50" /> Agenda tu evaluación
                     </Button>
                 </div>
             </div>
@@ -56,15 +57,11 @@ function Main() {
             </div>
             <div className="mainAbout">
                 <div>
-                    <h2>Hola, soy Nashly Paine Terapeuta Ocupacional</h2>
+                    <div>
+                        <BsFillSuitHeartFill size="100" />
+                    </div>
+                    <h2>Hola, soy Nashly Paine y estoy aqui para ayudarte</h2>
                     <div className="divAbout">
-                        <span className="imgRounded">
-                            <img
-                                className="imgAbout"
-                                src={terapeutaNashly}
-                                alt="terapeutaNashly"
-                            />
-                        </span>
                         <div className="textAbout">
                             <span>
                                 Desde muy temprano en mi formación como Terapeuta
@@ -77,6 +74,9 @@ function Main() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="divMetod">
+                <Metod />
             </div>
         </div>
     );
