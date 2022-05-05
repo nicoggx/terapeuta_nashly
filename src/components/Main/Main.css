@@ -1,0 +1,49 @@
+.main{
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.buttonAgenda {
+    width: 300px;
+    height: 100px;
+    background-color: #F27405;
+    border: none;
+    font-size: 30px;
+}
+
+.mainMiddle{
+    padding: 50px;
+    max-width: 1080px;
+    text-align: center;
+    margin: auto;
+}
+
+
+.textTitl{
+    margin-bottom: 40px;
+}
+
+.textIntDer{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: right;
+    word-wrap: break-word;
+    position: relative;
+    padding-top: 100px;
+}
+
+.textIntIzq{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.imgMiddle{
+    width: 400px;
+}

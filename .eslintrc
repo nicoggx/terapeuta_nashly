@@ -1,0 +1,94 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "es6": true,
+    "jest": true,
+    "cypress/globals": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:security/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:cypress/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "overrides": [
+    {
+      "files": ["*.jsx", "*.js"]
+    }
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "jest",
+    "import",
+    "security",
+    "jsx-a11y",
+    "cypress",
+    "react-hooks",
+    "testing-library"
+  ],
+  "rules": {
+    "no-console": ["error"],
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-manual-cleanup": "error",
+    "testing-library/prefer-screen-queries": "warn",
+    "no-var": "error",
+    "jest/no-identical-title": "error",
+    "jest/no-disabled-tests": "error",
+    "jest/no-focused-tests": "error",
+    "jest/expect-expect": [
+      "error",
+      {
+        "assertFunctionNames": ["expect", "fc.assert"]
+      }
+    ],
+    "jest/valid-expect": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "parent", "sibling", "index"]
+      }
+    ],
+    "react-hooks/exhaustive-deps": "error",
+    "prefer-const": "error",
+    "import/prefer-default-export": "off",
+    "max-len": ["error", { "code": 100 }],
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/no-onchange": 0,
+    "react/jsx-one-expression-per-line": "off",
+    "no-underscore-dangle": "off",
+    "react/no-array-index-key": "off",
+    "no-param-reassign": 0,
+    "import/no-mutable-exports": 0,
+    "react/jsx-props-no-spreading": 0,
+    "no-useless-escape": 0,
+    "react/require-default-props": "off",
+    "react/jsx-wrap-multilines": "off"
+  }
+}
