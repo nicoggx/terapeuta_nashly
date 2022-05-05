@@ -5,9 +5,17 @@
 
 .navbar-nav{
   font-size: 18px !important;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  color: black !important;
 }
 
 .logo{
   width: 120px;
+}
+
+@media screen and (max-width: 800px) {
+  .divLogo{
+    margin-left: 0px;
+  }
+
 }

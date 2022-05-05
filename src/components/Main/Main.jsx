@@ -2,6 +2,8 @@ import { FcAlarmClock } from 'react-icons/fc';
 import { Button } from 'react-bootstrap';
 import './Main.css';
 import terapia from '../../assets/terapia.jpeg';
+import adultomayor from '../../assets/adultomayor.jpeg';
+import terapeutaNashly from '../../assets/terapeuta_nashly.png';
 
 function Main() {
     return (
@@ -19,7 +21,7 @@ function Main() {
                 </div>
                 <div className="textIntIzq">
                     <div>
-                        <h4>En niños:</h4>
+                        <h2>En niños:</h2>
                         <span>
                             La terapia ocupacional ayuda a los niños con
                             discapacidades físicas, sensoriales o cognitivas. Los
@@ -35,7 +37,11 @@ function Main() {
                 </div>
                 <div className="textIntDer">
                     <div>
-                        <img className="imgMiddle" src={terapia} alt="ninos" />
+                        <img
+                            className="imgMiddle"
+                            src={adultomayor}
+                            alt="adultomayor"
+                        />
                     </div>
                     <div>
                         <h4>En adultos mayores:</h4>
@@ -45,6 +51,30 @@ function Main() {
                             autonomía de las personas mayores en el desempeño de las
                             tareas diarias, para lograr una mayor calidad de vida..
                         </span>
+                    </div>
+                </div>
+            </div>
+            <div className="mainAbout">
+                <div>
+                    <h2>Hola, soy Nashly Paine Terapeuta Ocupacional</h2>
+                    <div className="divAbout">
+                        <span className="imgRounded">
+                            <img
+                                className="imgAbout"
+                                src={terapeutaNashly}
+                                alt="terapeutaNashly"
+                            />
+                        </span>
+                        <div className="textAbout">
+                            <span>
+                                Desde muy temprano en mi formación como Terapeuta
+                                Ocupacional soñé con poder fundar un lugar acogedor,
+                                en donde las mamás y papás no solo asistan de manera
+                                semanal a una sesión en particular, si no, que en
+                                cada acción puedan sentir el apoyo en torno a las
+                                mejoras de sus hijos.
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>

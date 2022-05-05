@@ -1,0 +1,13 @@
+
+@media screen and (max-width: 800px) {
+    .divCarousel{
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+    .carousel{
+        width: 100px;
+        height: 100px;
+    }
+
+}

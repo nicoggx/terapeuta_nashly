@@ -26,6 +26,7 @@
 }
 
 .textIntDer{
+    font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: row;
     font-size: 20px;
@@ -36,6 +37,7 @@
 }
 
 .textIntIzq{
+    font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: row;
     font-size: 20px;
@@ -46,4 +48,103 @@
 
 .imgMiddle{
     width: 400px;
+}
+
+.mainAbout{
+    padding: 50px;
+    max-width: 1080px;
+    text-align: center;
+    margin: auto;
+}
+
+.imgAbout{
+    width: 300px;
+}
+
+.divAbout{
+    display: flex;
+    font-size: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    padding-top:50px;
+}
+
+.textAbout{
+    font-family: 'Lato', sans-serif;
+    padding-top: 60px;
+    padding-left: 100px;
+    text-align: justify;
+    width: 60%;
+    font-weight: 500;
+}
+
+.imgRounded{
+    border-radius: 22px 22px 22px 22px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+
+
+    .buttonAgenda {
+        width: 200px;
+        height: 80px;
+        background-color: #F27405;
+        border: none;
+        font-size: 30px;
+    }
+
+    .textIntDer{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        text-align: right;
+        word-wrap: break-word;
+        position: relative;
+        padding-top: 100px;
+    }
+
+    .imgMiddle{
+        width: 220px;
+    }
+
+    .textIntIzq{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        text-align: left;
+        word-wrap: break-word;
+        position: relative;
+    }
+
+    .mainAbout{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgAbout{
+        width: 200px;
+    }
+
+    .divAbout{
+        display: flex;
+        flex-direction: column;
+        padding-top:5px;
+    }
+
+    .textAbout{
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 0px;
+        font-weight: 500;
+        font-size: 15px;
+
+    }
+
+    .imgRounded{
+
+    }
+
+
 }
