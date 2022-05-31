@@ -9,7 +9,7 @@ function Navcomp() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse>
                     <Nav className="me-auto">
-                        <Nav.Link>Agenda tu evaluación</Nav.Link>
+                        <Nav.Link href="/agenda">Agenda tu evaluación</Nav.Link>
                         <Nav.Link>Servicios</Nav.Link>
                         <Nav.Link>Acerca de mi</Nav.Link>
                         <Nav.Link>Contactame</Nav.Link>

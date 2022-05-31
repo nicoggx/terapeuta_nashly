@@ -1,11 +1,11 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import { homeReducer } from './home/homeModule';
+import { calendarReducer } from './calendar/calendarModule';
 
 const composeEnhancers = compose;
 const middlwares = applyMiddleware(thunk);
 const reducers = combineReducers({
-    home: homeReducer,
+    calendar: calendarReducer,
 });
 
 export const store = createStore(reducers, {}, composeEnhancers(middlwares));

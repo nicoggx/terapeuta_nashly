@@ -1,0 +1,27 @@
+.footer {
+    background-color: #dfd7ac;
+}
+
+.footerDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.footersubDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 90px  20px;
+}
+
+.footerIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footerIcon{
+    padding: 20px;
+}

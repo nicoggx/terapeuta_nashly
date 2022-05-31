@@ -41,7 +41,7 @@
     "testing-library"
   ],
   "rules": {
-    "no-console": ["error"],
+    "no-console": "off",
     "jsx-a11y/label-has-for": [
       2,
       {
