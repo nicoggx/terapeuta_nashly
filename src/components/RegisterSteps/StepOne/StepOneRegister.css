@@ -1,0 +1,12 @@
+.spanError{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #E04D5B;
+}
+
+.spanInfo{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}

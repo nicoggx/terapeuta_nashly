@@ -1,23 +1,61 @@
 .nav {
-    margin-bottom: 15px;
-    text-align: center;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 .dot {
-    color: black;
-    cursor: pointer;
-    font-size: 36px;
-    line-height: 1;
-    margin: 0 15px;
-    opacity: .4;
-    text-shadow: none;
-    transition: opacity 1s ease,
-        text-shadow 1s ease;
-    will-change: opacity, text-shadow;
+    size: 100;
 }
 
+.step{
+    list-style: none;
+    position: relative;
+    text-align: center;
+    width: 250px;
+}
+
+.step::before{
+    margin-left: 15%;
+    margin-right: 15%;
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 70%;
+    right: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    background: linear-gradient(to left, #b7b7b7 50%, #4db193 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 200ms ease-in-out;
+}
+
+.step:first-child::before {
+    content: none;
+  }
+
 .active {
-    color: var(--blue);
+    background-color: var(--blue);
     opacity: 1;
     text-shadow: 0 0px 8px;
+}
+
+.active::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    right: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    background: linear-gradient(to left, #001a72 50%, #4db193 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 200ms ease-in-out;
 }

@@ -1,6 +1,6 @@
 
 .divLogo{
-  margin-left: 623px;
+  margin-left: 15px;
 }
 
 .navbar-nav{
@@ -10,7 +10,7 @@
 }
 
 .logo{
-  width: 120px;
+  width: 80px;
 }
 
 @media screen and (max-width: 800px) {

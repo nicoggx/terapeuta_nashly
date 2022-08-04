@@ -1,0 +1,35 @@
+.subContainerCard{
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.cardFecha{
+    width: 900px;
+    height: 300px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.cardHoras{
+    width: 900px;
+    height: 300px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.fechasContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: baseline;
+}
+
+.fechaContainer{
+    padding:5px;
+}
+
+.btnFecha{
+    background-color: #CDF0EA;
+    border-color: #CDF0EA;;
+    color: black;
+}

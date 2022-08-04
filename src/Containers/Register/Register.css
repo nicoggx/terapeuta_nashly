@@ -1,0 +1,41 @@
+.registerContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dfd7ac;
+    width: 100%;
+    height:1000px;
+}
+
+.registerTitle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+}
+
+.registerSubContainer{
+    background-color: white;
+    padding: 20px;
+    width: 450px;
+    margin: auto;
+    border-radius: 1px;
+}
+
+.containerAlert{
+    margin-top: 10px;
+}
+
+.alert{
+    width: 100%;
+}
+.userCreatedContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}

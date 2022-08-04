@@ -1,0 +1,64 @@
+.containerStep1{
+    display: flex;
+    flex-direction: row;
+}
+
+.cardOne{
+    margin-right: 20px;
+    width: 800px;
+    height: 500px;
+}
+.cardTwo{
+    width: 800px;
+    height: 500px;
+}
+
+
+
+.card-header {
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+}
+
+.card-title {
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.titlePrimera{
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    font-size: 28px;
+}
+
+.card-subtitle {
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+    font-size: 23px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.buttonContainer{
+    margin-top: 10px;
+}
+
+.buttonSeleccionar{
+    width: 200px;
+    background-color: #CDF0EA;
+    border-color: #CDF0EA;;
+    color: black;
+    font-size: 25px;
+}

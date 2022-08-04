@@ -2,17 +2,24 @@ import { FcAlarmClock } from 'react-icons/fc';
 import { Button } from 'react-bootstrap';
 import './Main.css';
 import { BsFillSuitHeartFill } from 'react-icons/bs';
+import { useHistory } from 'react-router-dom';
 import terapia from '../../assets/terapia.jpeg';
 import adultomayor from '../../assets/adultomayor.jpeg';
 import Metod from '../Metod/Metod';
 
 function Main() {
+    const history = useHistory();
+
+    const handleGoToAgenda = () => {
+        history.push('/agenda');
+    };
+
     return (
         <div className="main">
             <div>
                 <div>
-                    <Button className="buttonAgenda">
-                        <FcAlarmClock size="50" /> Agenda tu evaluación
+                    <Button onClick={handleGoToAgenda} className="buttonAgenda">
+                        <FcAlarmClock size="50" /> Agenda tu hora
                     </Button>
                 </div>
             </div>

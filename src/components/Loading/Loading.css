@@ -1,0 +1,24 @@
+.loadingContainer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 86%;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 999;
+
+}
+
+.loadingTitle{
+    font-family: 'Lato', sans-serif;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.spinner-border {
+    --bs-spinner-width: 80px;
+    --bs-spinner-height: 80px;
+
+}

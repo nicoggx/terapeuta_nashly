@@ -1,0 +1,40 @@
+.registerPatientContainer{
+    margin: auto;
+    border-radius: 1px;
+    text-align: left;
+
+}
+
+.titleRegisterP{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+.form-label{
+    text-align: right;
+}
+
+.cardRegister{
+    width: 800px;
+    height: 800px;
+}
+
+.buttonDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttonContainer{
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.buttonVolverContinuar{
+    width: 200px;
+    background-color: #CDF0EA;
+    border-color: #CDF0EA;;
+    color: black;
+    font-size: 25px;
+}

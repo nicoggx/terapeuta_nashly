@@ -1,20 +1,20 @@
-export const STEPS = {
-    STEP_1: {
+export const STEPS = [
+    {
         id: 'step_1',
-        title: 'Ingresa tus datos',
+        title: '¿Que incluye la atención?',
     },
-    STEP_2: {
+    {
         id: 'step_2',
-        title: 'Selecciona tipo de atención',
+        title: 'Ingresa los datos del paciente',
     },
-    STEP_3: {
+    {
         id: 'step_3',
         title: 'Selecciona fecha y hora',
     },
-    STEP_4: {
+    {
         id: 'step_4',
         title: 'Confirma y reserva tu atención',
     },
-};
+];
 
 export const TOTAL_STEPS = 4;
