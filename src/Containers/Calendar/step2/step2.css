@@ -14,9 +14,19 @@
     text-align: right;
 }
 
-.cardRegister{
+.cardRegisterType1{
     width: 800px;
-    height: 800px;
+    height: 850px;
+}
+
+.cardRegisterType2{
+    width: 800px;
+    height: 499px;
+}
+
+.cardRegisterType3{
+    width: 800px;
+    height: 200px;
 }
 
 .buttonDiv{

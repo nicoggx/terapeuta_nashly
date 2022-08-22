@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 export const formatRut = (rut) => {
     let rutPuntos;
     const actual = rut.replace(/^0+/, '');
@@ -22,33 +24,14 @@ export const formatRut = (rut) => {
     return rutPuntos;
 };
 
-function padTo2Digits(num) {
-    return num.toString().padStart(2, '0');
-}
-
 export const formatDate = (d) => {
-    const date = new Date(d);
-    return [
-        padTo2Digits(date.getDate()),
-        padTo2Digits(date.getMonth() + 1),
-        date.getFullYear(),
-    ].join('-');
+    return moment(d).utc().format('DD-MM-YYYY');
 };
 
 export const formatDateTwo = (d) => {
-    const date = new Date(d);
-    return [
-        date.getFullYear(),
-        padTo2Digits(date.getMonth() + 1),
-        padTo2Digits(date.getDate()),
-    ].join('-');
+    return moment(d).utc().format('YYYY-MM-DD');
 };
 
 export const hourConvert = (hour) => {
-    const date = new Date(hour)
-        .toLocaleString()
-        .split(' ')[1]
-        .split(':')
-        .splice(0, 2);
-    return date.join(':');
+    return moment(hour).utc().format('HH:mm');
 };

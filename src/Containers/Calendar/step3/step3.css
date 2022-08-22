@@ -5,13 +5,17 @@
 
 .cardFecha{
     width: 900px;
-    height: 300px;
+    height: auto;
     font-family: 'Rubik', sans-serif;
+}
+
+.cardFechaBody{
+    padding: 40px;
 }
 
 .cardHoras{
     width: 900px;
-    height: 300px;
+    height: auto;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -30,6 +34,43 @@
 
 .btnFecha{
     background-color: #CDF0EA;
+    border-color: #CDF0EA;
+    color: black;
+}
+
+.btnFecha:focus {
+    background-color: #CDF0EA;
+    outline: none;
+    box-shadow: none;
+    color: black;
+}
+
+.btnFechaActive{
+    background-color: #FAF4B7;
+    border-color: #FAF4B7;
+    color: black;
+}
+
+.btnFechaActive:focus {
+    background-color: #FAF4B7;
+    border-color: #FAF4B7;
+    outline: none;
+    box-shadow: none;
+    color: black;
+}
+
+.buttonRegisterSession{
+    width: 200px;
+    background-color: #CDF0EA;
     border-color: #CDF0EA;;
     color: black;
+    font-size: 25px;
+}
+
+.buttonRegisterSession:disabled{
+    width: 200px;
+    background-color: #b7b7b7;
+    border-color: #b7b7b7;;
+    color: black;
+    font-size: 25px;
 }

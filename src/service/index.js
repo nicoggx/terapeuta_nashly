@@ -16,7 +16,6 @@ function handleSuccess(response) {
 }
 
 function handleError(error) {
-    console.log('error ', error);
     const { response } = error;
     if (response !== undefined) {
         const { status, data } = response;

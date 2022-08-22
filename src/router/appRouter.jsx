@@ -9,6 +9,7 @@ import Login from '../Containers/Login/Login';
 import { verifyAuthExpire } from '../modules/auth/authModule';
 import { authVerify } from '../util/auth';
 import Register from '../Containers/Register/Register';
+import RegisterHoursT from '../Containers/TO/RegisterHoursTO/RegisterHoursTO';
 
 function AppRouter() {
     const dispatch = useDispatch();
@@ -23,6 +24,13 @@ function AppRouter() {
                     <Route exact path="/" render={() => <Home />} />
                     {authVerify() && (
                         <Route exact path="/agenda" render={() => <Calendar />} />
+                    )}
+                    {authVerify() && (
+                        <Route
+                            exact
+                            path="/registerHours"
+                            render={() => <RegisterHoursT />}
+                        />
                     )}
                     <Route exact path="/login" render={() => <Login />} />
                     <Route exact path="/registrar" render={() => <Register />} />

@@ -2,8 +2,16 @@ import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 import { Card } from 'react-bootstrap';
 import './step1.css';
+import { useDispatch } from 'react-redux';
+import { selectTypeSession } from '../../../modules/session/sessionModule';
 
 function Step1({ nextStep }) {
+    const dispatch = useDispatch();
+
+    const handleSelectTypeAtt = (type) => {
+        dispatch(selectTypeSession(type));
+    };
+
     return (
         <div>
             <h1>¿Que incluye la atención de Terapia ocupacional a domicilio?</h1>
@@ -34,7 +42,12 @@ function Step1({ nextStep }) {
                             </Card.Body>
                         </Card>
                         <div className="buttonContainer">
-                            <Button className="buttonSeleccionar" onClick={nextStep}>
+                            <Button
+                                className="buttonSeleccionar"
+                                onClick={() => {
+                                    nextStep();
+                                    handleSelectTypeAtt(1);
+                                }}>
                                 Seleccionar
                             </Button>
                         </div>
@@ -73,7 +86,12 @@ function Step1({ nextStep }) {
                             </Card.Body>
                         </Card>
                         <div className="buttonContainer">
-                            <Button className="buttonSeleccionar" onClick={nextStep}>
+                            <Button
+                                className="buttonSeleccionar"
+                                onClick={() => {
+                                    nextStep();
+                                    handleSelectTypeAtt(2);
+                                }}>
                                 Seleccionar
                             </Button>
                         </div>

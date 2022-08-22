@@ -1,0 +1,182 @@
+.registerHoursContainer{
+    display: flex;
+    flex-direction: column;
+}
+.registerHoursContainerSub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerHoursContainerSub2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.selectWeekContainer{
+    padding: 40px;
+}
+
+.buttonSelectWeek{
+    width: 250px;
+    height: 60px;
+    background-color: #CDF0EA;
+    border-color: #CDF0EA;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+.selectionDaySpan{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+.calendarWeek{
+    width: 700px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.buttonDay{
+    margin: 10px;
+    width: 150px;
+    background-color: #FAF4B7;
+    border-color: #FAF4B7;
+    color: black;
+}
+
+.buttonDay:focus{
+    margin: 10px;
+    width: 150px;
+    background-color: #FAF4B7;
+    border-color: #FAF4B7;
+    color: black;
+}
+
+.buttonDay:hover{
+    margin: 10px;
+    width: 150px;
+    background-color: #FFDBA4;
+    border-color: #FFDBA4;
+    color: black;
+}
+
+.buttonDaySelected{
+    margin: 10px;
+    width: 150px;
+    background-color: #FFDBA4;
+    border-color: #FFDBA4;
+    color: black;
+}
+
+
+.buttonDaySelected:focus{
+    margin: 10px;
+    width: 150px;
+    background-color: #FFDBA4;
+    border-color: #FFDBA4;
+    color: black;
+}
+
+.daySelectContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.buttonCreate{
+    margin: 10px;
+    width: 150px;
+    background-color: #FFDBA4;
+    border-color: #FFDBA4;
+    color: black;
+}
+
+.buttonCreate:focus{
+    margin: 10px;
+    width: 150px;
+    background-color: #FFDBA4;
+    border-color: #FFDBA4;
+    color: black;
+}
+
+.hoursCreate{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.hourSelected{
+    padding-bottom: 20px;
+}
+
+.hoursCreateContainer{
+    justify-content: left;
+}
+
+.hoursView{
+    justify-content: left;
+    border: #b7b7b7 3px solid;
+    border-radius: 2px;
+    padding: 15px;
+}
+
+.form-control{
+    width: 200px !important;
+}
+
+.hourInitEnd{
+    background-color: #FFDBA4;
+    width: 150px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+.hourData{
+    background-color: #FFDBA4;
+    width: 150px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+.hourAvalible{
+    background-color: #7FB77E;
+    color: white;
+}
+
+.hourProgrammed{
+    background-color: #F5E8C7;
+}
+
+.spanError{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #E04D5B;
+}
+
+.containerAlert{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.alert{
+    width: 50%;
+}
