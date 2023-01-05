@@ -13,6 +13,11 @@
   width: 80px;
 }
 
+.color-nav{
+  background-color: #F6C6EA;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 800px) {
   .divLogo{
     margin-left: 0px;

@@ -12,8 +12,9 @@ import Step3 from './step3/step3';
 function Calendar() {
     const dispatch = useDispatch();
 
+    const user = JSON.parse(localStorage.getItem('auth'));
     useEffect(() => {
-        dispatch(getPatientsById(1));
+        dispatch(getPatientsById(user.info.idPerson));
     });
 
     return (

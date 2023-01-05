@@ -10,6 +10,8 @@ import { verifyAuthExpire } from '../modules/auth/authModule';
 import { authVerify } from '../util/auth';
 import Register from '../Containers/Register/Register';
 import RegisterHoursT from '../Containers/TO/RegisterHoursTO/RegisterHoursTO';
+import ViewHoursTO from '../Containers/TO/ViewHoursTO/ViewHoursTO';
+import HistoryHoursTo from '../Containers/TO/HistoryHoursTO/HistoryHoursTo';
 
 function AppRouter() {
     const dispatch = useDispatch();
@@ -30,6 +32,20 @@ function AppRouter() {
                             exact
                             path="/registerHours"
                             render={() => <RegisterHoursT />}
+                        />
+                    )}
+                    {authVerify() && (
+                        <Route
+                            exact
+                            path="/viewHoursTO"
+                            render={() => <ViewHoursTO />}
+                        />
+                    )}
+                    {authVerify() && (
+                        <Route
+                            exact
+                            path="/historyHoursTO"
+                            render={() => <HistoryHoursTo />}
                         />
                     )}
                     <Route exact path="/login" render={() => <Login />} />

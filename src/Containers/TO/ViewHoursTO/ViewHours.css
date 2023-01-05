@@ -1,0 +1,51 @@
+.viewHourTOContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.scheduleContainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(7, 1fr);
+    margin: auto;
+    padding: 20px;
+}
+
+.cardSchedule{
+    margin-right: 20px;
+}
+
+
+.buttonSchedule{
+    margin: 10px;
+    width: 250px;
+    background-color: #FFDBA4;
+    border-color: #FFDBA4;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+
+.buttonSchedule:focus{
+    margin: 10px;
+    width: 250px;
+    background-color: #FFDBA4;
+    border-color: #FFDBA4;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+
+.buttonSchedule:hover{
+    margin: 10px;
+    width: 250px;
+    background-color: #FFDBA4;
+    border-color: #FFDBA4;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}

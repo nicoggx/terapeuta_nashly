@@ -11,6 +11,7 @@ import {
     activateLoadingSession,
     desactiveLoadingSession,
 } from '../../../modules/session/sessionModule';
+import { getTypeSession } from '../../../util/sessions';
 
 moment.locale('es', {
     week: {
@@ -100,7 +101,7 @@ function RegisterHoursT() {
                 response.response.forEach((m) => {
                     const obj = {};
                     obj.hour = moment(m.hourSession).utc().format('HH:mm');
-                    obj.state = m.state === 1 ? 'Disponible' : 'Agendada';
+                    obj.state = getTypeSession(m.state);
                     arrayH.push(obj);
                 });
                 setHoursData([...arrayH]);
@@ -175,6 +176,7 @@ function RegisterHoursT() {
     return (
         <div className="registerHoursContainer">
             <div className="registerHoursContainerSub">
+                <h1>Registrar horas</h1>
                 <div className="selectWeekContainer">
                     {!activeNextWeek && (
                         <div>

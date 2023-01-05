@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
-import { Alert, Card } from 'react-bootstrap';
+import { Alert, Card, Form } from 'react-bootstrap';
 import './step3.css';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -11,6 +11,7 @@ import {
 } from '../../../modules/session/sessionModule';
 import { formatDate, formatDateTwo, hourConvert } from '../../../util/user';
 import { createSession, getHoursForDate } from '../../../service/session/sessions';
+import btnFlow from '../../../assets/btn-flow-celecte.png';
 
 function Step3({ nextStep, previousStep }) {
     const dispatch = useDispatch();
@@ -24,6 +25,7 @@ function Step3({ nextStep, previousStep }) {
     const [hourDate, setHourDate] = useState('');
     const [daySelect, setDaySelect] = useState('');
     const [sessionOk, setSessionOK] = useState(false);
+    const [typeOfPay, setTypeOfPay] = useState(0);
 
     useEffect(() => {
         dispatch(activateLoadingSession('Cargando dias con sesiones disponibles.'));
@@ -31,6 +33,7 @@ function Step3({ nextStep, previousStep }) {
         setDaySelect('');
         setHours([]);
         dispatch(desactiveLoadingSession());
+        setHourSelect(0);
     }, [dispatch]);
 
     async function handleGetHours(date) {
@@ -69,6 +72,11 @@ function Step3({ nextStep, previousStep }) {
         setHourDate(hourConvert(hour.hourSession));
     };
 
+    const handleChangePay = (e) => {
+        e.persist();
+        setTypeOfPay(e.target.value);
+    };
+
     const handleRegisterSession = async () => {
         dispatch(activateLoadingSession('Agendando sesión...'));
         const response = {
@@ -83,6 +91,7 @@ function Step3({ nextStep, previousStep }) {
                 userId: user.id,
                 hour: hourDate,
                 patientId: pacienteSelected,
+                typeOfPay,
                 infoPatient: {
                     name: infoPatient.name,
                     lastname: infoPatient.lastname,
@@ -137,6 +146,11 @@ function Step3({ nextStep, previousStep }) {
                                             </Button>
                                         </div>
                                     ))}
+                                    {sessions.length === 0 && (
+                                        <div>
+                                            No hay horas disponibles para agendar
+                                        </div>
+                                    )}
                                 </div>
                             </Card.Body>
                         </Card>
@@ -165,6 +179,42 @@ function Step3({ nextStep, previousStep }) {
                                                 </Button>
                                             </div>
                                         ))}
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    )}
+                    {hourSelect !== 0 && (
+                        <div>
+                            <Card className="cardHoras">
+                                <Card.Header>
+                                    Seleccione un metodo de pago
+                                </Card.Header>
+                                <Card.Body className="cardFechaBody">
+                                    <div className="fechasContainer">
+                                        <Form>
+                                            <div key="inline-radio" className="mb-3">
+                                                <Form.Check
+                                                    inline
+                                                    label=""
+                                                    name="group1"
+                                                    type="radio"
+                                                    id="inline-radio-1"
+                                                    value={1}
+                                                    onChange={handleChangePay}
+                                                />
+                                                <img src={btnFlow} alt="flow" />
+                                                <Form.Check
+                                                    inline
+                                                    label="Transferencia"
+                                                    name="group1"
+                                                    type="radio"
+                                                    id="inline-radio-2"
+                                                    value={2}
+                                                    onChange={handleChangePay}
+                                                />
+                                            </div>
+                                        </Form>
                                     </div>
                                 </Card.Body>
                             </Card>

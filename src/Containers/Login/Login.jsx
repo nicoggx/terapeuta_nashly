@@ -70,7 +70,7 @@ function Login() {
                 <div className="titleLogin">
                     <span>Ingresar</span>
                 </div>
-                <Form>
+                <Form className="formLogin">
                     <Form.Group className="mb-10">
                         <Form.Label>Correo Electronico</Form.Label>
                         <Form.Control

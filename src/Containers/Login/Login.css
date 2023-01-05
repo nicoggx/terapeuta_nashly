@@ -13,6 +13,10 @@
     justify-content: center;
     margin: auto;
 }
+.formLogin{
+    display: flex;
+    flex-direction: column;
+}
 
 .form-control{
     display: initial;

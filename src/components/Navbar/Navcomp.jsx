@@ -35,27 +35,22 @@ function Navcomp() {
                 <Navbar.Collapse>
                     <Nav className="me-auto">
                         <Nav.Link href="/">Inicio</Nav.Link>
-                        {roleUser() === PACIENT_USER && (
+                        {roleUser() !== TO_USER && (
                             <Nav.Link href="/agenda">Agenda tu hora</Nav.Link>
                         )}
                         {roleUser() === TO_USER && (
                             <Nav.Link href="/registerHours">
-                                Registrar horas disponibles
+                                Registrar horas
                             </Nav.Link>
                         )}
                         {roleUser() === TO_USER && (
-                            <Nav.Link href="/registrarhoras">
-                                Ver horas agendadas
-                            </Nav.Link>
+                            <Nav.Link href="/viewHoursTO">Horas agendadas</Nav.Link>
                         )}
-                        {roleUser() === PACIENT_USER && (
-                            <Nav.Link>Servicios</Nav.Link>
+                        {roleUser() === TO_USER && (
+                            <Nav.Link href="/historyHoursTO">Historial</Nav.Link>
                         )}
-                        {roleUser() === PACIENT_USER && (
-                            <Nav.Link>Acerca de mi</Nav.Link>
-                        )}
-                        {roleUser() === PACIENT_USER && (
-                            <Nav.Link>Contactame</Nav.Link>
+                        {roleUser() !== TO_USER && (
+                            <Nav.Link href="/">Servicios</Nav.Link>
                         )}
                     </Nav>
                 </Navbar.Collapse>
